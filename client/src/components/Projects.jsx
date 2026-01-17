@@ -95,7 +95,7 @@ const Projects = () => {
                     {project.title}
                   </h3>
 
-                  <p className="mt-4 text-slate-400 text-sm leading-relaxed">
+                  <p className="mt-4 text-smlate-400 text-smm leading-relaxed">
                     {project.desc}
                   </p>
 
@@ -104,9 +104,9 @@ const Projects = () => {
                     {project.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="rounded-full px-4 py-2 text-sm 
+                        className="rounded-full px-4 py-2 text-smm 
                         bg-white/5 border border-white/10 
-                        text-slate-300
+                        text-smlate-300
                         group-hover:border-[#ff4d4d]/40
                         transition-colors"
                       >
@@ -120,7 +120,7 @@ const Projects = () => {
                     <a
                       href="#"
                       className="inline-flex items-center gap-2 
-                      text-sm font-semibold
+                      text-smm font-semibold
                       bg-gradient-to-r from-[#ff7a18] to-[#ff2e88]
                       bg-clip-text text-transparent
                       opacity-80 group-hover:opacity-100 transition-opacity"

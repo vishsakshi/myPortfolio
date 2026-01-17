@@ -66,7 +66,7 @@ const Hero = () => {
           {/* OPEN TO WORK BADGE */}
           <div className="mb-1 flex justify-center"><span className="inline-flex items-center gap-2
   rounded-full bg-white/5 border border-white/10
-  px-6 py-1.5 text-s text-white">
+  px-6 py-1.5 text-sm text-white">
 
             <span className="
     h-2 w-2 rounded-full
@@ -103,7 +103,7 @@ const Hero = () => {
           {/* DESCRIPTION */}
           <p
             className="mt-3 max-w-2xl mx-auto
-          text-slate-400 leading-relaxed text-base md:text-lg"
+          text-smlate-400 leading-relaxed text-base md:text-lg"
           >
             I develop clean, scalable web applications using modern JavaScript technologies, with experience across frontend, backend, and a strong focus on fundamentals and problem-solving.
 

@@ -86,7 +86,7 @@ const Navbar = () => {
             href="#contact"
             className="
               rounded-full px-6 py-2.5
-              text-sm font-semibold text-white
+              text-smm font-semibold text-white
               bg-gradient-to-r from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]
               shadow-lg shadow-[#ff4d4d]/40
               transition-all duration-300

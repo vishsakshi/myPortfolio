@@ -30,7 +30,7 @@ const About = () => {
         <div>
           <div className="mb-1 fle"><span className="inline-flex items-center gap-2
   rounded-full bg-white/5 border border-white/10
-  px-5 py-1.5 text-s text-slate-300">
+  px-5 py-1.5 text-sm text-smlate-300">
 
             <span className="
     h-2 w-2 rounded-full
@@ -54,12 +54,12 @@ const About = () => {
           </h2>
 
           <div className="space-y-6 pt-6 max-w-2xl">
-            <p className="text-slate-300 leading-relaxed text-base md:text-lg">
+            <p className="text-smlate-300 leading-relaxed text-base md:text-lg">
               I’m a Computer Science student and full stack web developer who enjoys turning complex problems into clean, practical solutions. I focus on building web applications that are easy to use, well-structured, and grounded in strong fundamentals.
 
             </p>
 
-            <p className="text-slate-300 leading-relaxed text-sm md:text-lg">
+            <p className="text-smlate-300 leading-relaxed text-smm md:text-lg">
               My approach to development is centered around clarity and balance — writing maintainable code, designing logical backend flows, and creating user interfaces that feel natural to interact with. I care about how different parts of a system work together, not just how they look or function individually.
 
             </p>
@@ -80,7 +80,7 @@ const About = () => {
               >
                 Hands-on
               </div>
-              <div className="text-sm text-slate-300 mt-2 font-medium">
+              <div className="text-smm text-smlate-300 mt-2 font-medium">
                 Project Experience
               </div>
             </div>
@@ -98,35 +98,35 @@ const About = () => {
               >
                 Web
               </div>
-              <div className="text-sm text-slate-300 mt-2 font-medium">
+              <div className="text-smm text-smlate-300 mt-2 font-medium">
                 Application Developer
               </div>
             </div>
           </div>
 
           {/* SNAPSHOT ROW */}
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm text-slate-400 max-w-3xl">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-smm text-smlate-400 max-w-3xl">
             {/* <div className="border-l border-white/10 pl-4">
-              <p className="text-xs uppercase tracking-wide text-slate-500">
+              <p className="text-xs uppercase tracking-wide text-smlate-500">
                 Based in
               </p>
-              <p className="mt-1 font-medium text-slate-200">India</p>
+              <p className="mt-1 font-medium text-smlate-200">India</p>
             </div> */}
 
             <div className="border-l border-white/10 pl-4">
-              <p className="text-xs uppercase tracking-wide text-slate-500">
+              <p className="text-xs uppercase tracking-wide text-smlate-500">
                 Focus
               </p>
-              <p className="mt-1 font-medium text-slate-200">
+              <p className="mt-1 font-medium text-smlate-200">
                 Full-stack development & fundamentals
               </p>
             </div>
 
             <div className="border-l border-white/10 pl-4">
-              <p className="text-xs uppercase tracking-wide text-slate-500">
+              <p className="text-xs uppercase tracking-wide text-smlate-500">
                 Currently
               </p>
-              <p className="mt-1 font-medium text-slate-200">
+              <p className="mt-1 font-medium text-smlate-200">
                 Building projects & strengthening core concepts
               </p>
             </div>
@@ -184,7 +184,7 @@ const About = () => {
                 opacity-0 group-hover:opacity-100 transition-all duration-300
                 translate-y-2 group-hover:translate-y-0"
               >
-                <p className="text-sm font-bold text-white tracking-wide">
+                <p className="text-smm font-bold text-white tracking-wide">
                   CS Undergraduate
                 </p>
               </div> */}

@@ -21,7 +21,7 @@ const Experience = () => {
         <div className="mb-28 max-w-3xl">
           <span className="inline-flex items-center gap-2
             rounded-full bg-white/5 border border-white/10
-            px-5 py-1.5 text-sm text-slate-300 mb-3">
+            px-5 py-1.5 text-smm text-smlate-300 mb-3">
 
             <span className="h-2 w-2 rounded-full bg-amber-500 animate-pulse
               shadow-[0_0_10px_rgba(255,180,80,0.8)]" />
@@ -110,8 +110,8 @@ const Experience = () => {
                   {item.role}
                 </h3>
 
-                <p className="text-lg text-slate-300">{item.org}</p>
-                <p className="text-sm text-slate-400">{item.year}</p>
+                <p className="text-lg text-smlate-300">{item.org}</p>
+                <p className="text-smm text-smlate-400">{item.year}</p>
               </div>
 
               {/* RIGHT CONTENT */}
@@ -135,17 +135,17 @@ const Experience = () => {
                   bg-gradient-to-b from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]
                   rounded-full opacity-70" /> */}
 
-                <p className="text-slate-300 text-[17px] leading-7 mb-8 max-w-2xl">
+                <p className="text-smlate-300 text-[17px] leading-7 mb-8 max-w-2xl">
                   {item.desc}
                 </p>
 
-                <ul className="space-y-4 text-[16px] text-slate-400">
+                <ul className="space-y-4 text-[16px] text-smlate-400">
                   {item.points.map((point, i) => (
                     <li
                       key={i}
                       className="flex gap-3 items-start
                       transition-all duration-300
-                      hover:text-slate-200 hover:translate-x-1"
+                      hover:text-smlate-200 hover:translate-x-1"
                     >
                       <span className="mt-1 h-1.5 w-1.5 rounded-full
                         bg-gradient-to-r from-[#ff7a18] to-[#ff2e88]" />

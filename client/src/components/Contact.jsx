@@ -24,7 +24,7 @@ const Contact = () => {
             <span
               className="inline-flex items-center gap-2
               rounded-full bg-white/5 border border-white/10
-              px-5 py-1.5 text-xs text-slate-300 mb-6"
+              px-5 py-1.5 text-xs text-smlate-300 mb-6"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-amber-700"></span>
               Open to work
@@ -34,7 +34,7 @@ const Contact = () => {
               Get in touch.
             </h2>
 
-            <p className="mt-4 max-w-2xl mx-auto text-slate-300 leading-relaxed">
+            <p className="mt-4 max-w-2xl mx-auto text-smlate-300 leading-relaxed">
               I’m currently looking for new opportunities. Whether you have a
               question, a project idea, or just want to connect, feel free to
               reach out.
@@ -60,14 +60,14 @@ const Contact = () => {
                 rounded-2xl bg-black/40
                 px-6 py-4 border border-white/10"
               >
-                <span className="text-sm text-slate-300 break-all">
+                <span className="text-smm text-smlate-300 break-all">
                   sakshi.vishwakarma.23cse@bmu.edu.in
                 </span>
 
                 <a
                   href="mailto:sakshi.vishwakarma.23cse@bmu.edu.in"
                   className="inline-flex justify-center
-                  rounded-xl px-6 py-2.5 text-sm font-semibold
+                  rounded-xl px-6 py-2.5 text-smm font-semibold
                   bg-gradient-to-r from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]
                   text-black hover:opacity-90 transition"
                 >
@@ -110,7 +110,7 @@ const Contact = () => {
 
       {/* COPYRIGHT */}
       {/* <div className="mt-12 flex justify-center">
-        <p className="text-xs text-slate-400 text-center">
+        <p className="text-xs text-smlate-400 text-center">
           © {new Date().getFullYear()} Sakshi Vishwakarma
         </p>
       </div> */}

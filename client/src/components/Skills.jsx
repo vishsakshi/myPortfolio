@@ -103,7 +103,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold text-white">
             Skills & Technologies
           </h2>
-          {/* <p className="mt-5 max-w-2xl text-slate-400 text-lg">
+          {/* <p className="mt-5 max-w-2xl text-smlate-400 text-lg">
             A focused toolkit across frontend, backend, data science, and the tools
             I use to ship production-ready projects.
           </p> */}
@@ -166,7 +166,7 @@ const Skills = () => {
               </h3>
 
               {/* desc */}
-              <p className="text-base text-slate-400 mb-8 leading-relaxed">
+              <p className="text-base text-smlate-400 mb-8 leading-relaxed">
                 {card.desc}
               </p>
 
