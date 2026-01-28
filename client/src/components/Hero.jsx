@@ -35,9 +35,12 @@ const Hero = () => {
     <section
       id="home"
       className="
-    relative min-h-screen flex items-center justify-center
-    text-white px-6 md:px-10 overflow-hidden
-    pt-24 md:pt-0
+    relative min-h-screen
+    flex items-center justify-center
+    text-white
+    px-6 md:px-10
+    pt-24 md:pt-0   /* 👈 FIX */
+    overflow-hidden
   "
     >
       {/* ORIGINAL BACKGROUND BLOBS */}
@@ -84,9 +87,15 @@ const Hero = () => {
 
           {/* NAME — SIMPLE, WHITE, ONE LINE */}
           <h1
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl
-  font-extrabold tracking-tight whitespace-nowrap text-white
-  drop-shadow-[0_0_35px_rgba(255,255,255,0.35)]"
+            className="
+    text-[38px]          /* mobile */
+    sm:text-5xl
+    md:text-7xl
+    font-extrabold
+    tracking-tight
+    text-white
+    drop-shadow-[0_0_35px_rgba(255,255,255,0.35)]
+  "
           >
             Sakshi Vishwakarma
           </h1>
@@ -106,15 +115,15 @@ const Hero = () => {
 
           {/* DESCRIPTION */}
           <p
-            className="mt-3 max-w-2xl mx-auto
-          text-smlate-400 leading-relaxed text-base md:text-lg"
+            className="mt-3 max-w-md sm:max-w-2xl mx-auto
+  text-smlate-400 leading-relaxed text-base md:text-lg"
           >
             I develop clean, scalable web applications using modern JavaScript technologies, with experience across frontend, backend, and a strong focus on fundamentals and problem-solving.
 
           </p>
 
           {/* ACTIONS */}
-          <div className="mt-12 flex justify-center gap-4 flex-wrap">
+          <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="#projects"
               className="rounded-xl px-8 py-4
