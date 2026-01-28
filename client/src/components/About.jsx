@@ -22,15 +22,18 @@ const About = () => {
 
       {/* MAIN CONTENT */}
       <div
-        className="relative z-10 max-w-7xl mx-auto 
-        grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] 
-        gap-14 lg:gap-24 items-center"
+        className="
+    relative z-10 mx-auto
+    max-w-md sm:max-w-2xl lg:max-w-7xl
+    grid grid-cols-1 lg:grid-cols-[1.4fr_1fr]
+    gap-14 lg:gap-24 items-center
+  "
       >
         {/* LEFT — IDENTITY */}
         <div>
           <div className="mb-1 fle"><span className="inline-flex items-center gap-2
   rounded-full bg-white/5 border border-white/10
-  px-5 py-1.5 text-sm text-smlate-300">
+  px-4 py-1 text-xs sm:text-sm text-smlate-300">
 
             <span className="
     h-2 w-2 rounded-full
@@ -42,7 +45,7 @@ const About = () => {
           </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">
             I build web systems that feel
             <span
               className="block mt-3 bg-gradient-to-r 
@@ -53,7 +56,7 @@ const About = () => {
             </span>
           </h2>
 
-          <div className="space-y-6 pt-6 max-w-2xl">
+          <div className="space-y-6 pt-6 max-w-md sm:max-w-2xl">
             <p className="text-smlate-300 leading-relaxed text-base md:text-lg">
               I’m a Computer Science student and full stack web developer who enjoys turning complex problems into clean, practical solutions. I focus on building web applications that are easy to use, well-structured, and grounded in strong fundamentals.
 
@@ -66,7 +69,7 @@ const About = () => {
           </div>
 
           {/* HIGHLIGHTS */}
-          <div className="grid grid-cols-2 gap-6 pt-8 max-w-md">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 max-w-md">
             <div
               className="group p-6 rounded-2xl bg-white/5 border border-white/10 
               backdrop-blur-sm hover:bg-white/10 
@@ -113,7 +116,7 @@ const About = () => {
               <p className="mt-1 font-medium text-smlate-200">India</p>
             </div> */}
 
-            <div className="border-l border-white/10 pl-4">
+            <div className="sm:border-l border-white/10 sm:pl-4">
               <p className="text-xs uppercase tracking-wide text-smlate-500">
                 Focus
               </p>
@@ -157,7 +160,7 @@ const About = () => {
             {/* Image */}
             <div
               className="relative 
-              h-[400px] w-[300px] md:h-[430px] md:w-[320px] 
+              h-[320px] w-[240px] sm:h-[400px] sm:w-[300px]
               rounded-[2.5rem] overflow-hidden 
               shadow-2xl border border-white/10
               transition-all duration-300
