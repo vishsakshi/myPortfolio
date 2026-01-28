@@ -33,9 +33,12 @@ const Hero = () => {
 
   return (
     <section
-      id= "home"
-      className="relative min-h-screen flex items-center justify-center
-      text-white px-6 md:px-10 overflow-hidden"
+      id="home"
+      className="
+    relative min-h-screen flex items-center justify-center
+    text-white px-6 md:px-10 overflow-hidden
+    pt-24 md:pt-0
+  "
     >
       {/* ORIGINAL BACKGROUND BLOBS */}
       <div className="absolute -top-32 -left-32 
