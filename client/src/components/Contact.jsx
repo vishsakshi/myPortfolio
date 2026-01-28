@@ -3,7 +3,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <section
-      id="contact"
+      // id="contact"
       className="relative px-6 md:px-10 py-24 overflow-hidden"
     >
       {/* Ambient background */}
@@ -21,14 +21,14 @@ const Contact = () => {
         >
           {/* Header */}
           <div className="text-center">
-            <span
-              className="inline-flex items-center gap-2
-              rounded-full bg-white/5 border border-white/10
-              px-5 py-1.5 text-xs text-smlate-300 mb-6"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-amber-700"></span>
-              Open to work
-            </span>
+            <span className="inline-flex items-center gap-2
+            rounded-full bg-white/5 border border-white/10
+            px-5 py-1.5 text-smm text-smlate-300 mb-3">
+
+            <span className="h-2 w-2 rounded-full bg-amber-500 animate-pulse
+              shadow-[0_0_10px_rgba(255,180,80,0.8)]" />
+            Open to work
+          </span>
 
             <h2 className="text-4xl md:text-4xl font-extrabold text-white">
               Get in touch.
@@ -60,7 +60,7 @@ const Contact = () => {
                 rounded-2xl bg-black/40
                 px-6 py-4 border border-white/10"
               >
-                <span className="text-smm text-smlate-300 break-all">
+                <span className="text-smm text-slate-300 break-all">
                   sakshi.vishwakarma.23cse@bmu.edu.in
                 </span>
 

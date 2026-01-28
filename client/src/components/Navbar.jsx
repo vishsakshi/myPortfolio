@@ -14,40 +14,18 @@ const Navbar = () => {
         <a href="#home" className="group relative">
           <div
             className="
-              relative flex h-11 w-11 items-center justify-center
-              rounded-xl
-              bg-gradient-to-r from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]
-              shadow-lg shadow-[#ff4d4d]/40
-              transition-all duration-300
-              group-hover:rotate-6
-              animate-[svPop_0.6s_ease-out]
-            "
+      relative flex h-11 w-11 items-center justify-center
+      rounded-xl
+      bg-gradient-to-r from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]
+      shadow-lg shadow-[#ff4d4d]/40
+      transition-all duration-300
+      group-hover:rotate-6
+      animate-[svPop_0.6s_ease-out]
+    "
           >
-            {/* White glow */}
-            <div
-              className="
-                absolute -inset-2 rounded-xl
-                bg-white/30 blur-xl
-                opacity-60
-              "
-            />
-
-            {/* Inner overlay */}
-            <div
-              className="
-                absolute inset-[2px] rounded-lg
-                bg-black/20
-              "
-            />
-
-            {/* Text */}
-            <span
-              className="
-                relative z-10 text-base
-                font-extrabold tracking-wide
-                text-white
-              "
-            >
+            <div className="absolute -inset-2 rounded-xl bg-white/30 blur-xl opacity-60" />
+            <div className="absolute inset-[2px] rounded-lg bg-black/20" />
+            <span className="relative z-10 text-base font-extrabold tracking-wide text-white">
               SV
             </span>
           </div>
@@ -58,28 +36,29 @@ const Navbar = () => {
 
           {/* NAV LINKS */}
           <div className="hidden md:flex gap-8 text-lg tracking-wide text-white/80">
-            {["About", "Skills", "Projects", "Contact"].map((item) => (
+            {["About", "Skills", "Projects", "Experience"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 className="
-                  relative group hover:text-white transition
-                "
+        relative group hover:text-white transition
+      "
               >
                 {item}
 
                 {/* Sliding underline */}
                 <span
                   className="
-                    absolute left-0 -bottom-1 h-[2px] w-0
-                    bg-gradient-to-r from-[#ff7a18] to-[#ff2e88]
-                    transition-all duration-300
-                    group-hover:w-full
-                  "
+          absolute left-0 -bottom-1 h-[2px] w-0
+          bg-gradient-to-r from-[#ff7a18] to-[#ff2e88]
+          transition-all duration-300
+          group-hover:w-full
+        "
                 />
               </a>
             ))}
           </div>
+
 
           {/* CTA BUTTON */}
           <a

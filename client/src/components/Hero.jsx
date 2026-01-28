@@ -33,6 +33,7 @@ const Hero = () => {
 
   return (
     <section
+      id= "home"
       className="relative min-h-screen flex items-center justify-center
       text-white px-6 md:px-10 overflow-hidden"
     >

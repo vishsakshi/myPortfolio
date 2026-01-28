@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative scroll-mt-28 px-6 md:px-10 py-32 overflow-visible"
+      className="relative scroll-mt-3 px-6 md:px-10 py-32 overflow-visible"
     >
       {/* BACKGROUND ELEMENTS */}
       <div className="absolute top-24 right-0 
