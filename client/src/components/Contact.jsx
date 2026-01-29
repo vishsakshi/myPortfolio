@@ -3,7 +3,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <section
-      // id="contact"
+      id="contact"
       className="relative px-5 sm:px-6 md:px-10 py-20 sm:py-24 overflow-hidden"
     >
       {/* Ambient background */}
