@@ -23,36 +23,20 @@ const projects = [
     tags: ["React Native", "TypeScript", "SQLite"],
     linkText: "View app →",
   },
-  // {
-  //   title: "WeatherSync",
-  //   desc:
-  //     "A progressive web app delivering hyper-local weather forecasts with offline-first capabilities.",
-  //   tags: ["Vue.js", "Service Workers", "OpenWeather"],
-  //   linkText: "View demo →",
-  // },
-  // {
-  //   title: "Relay Chat",
-  //   desc:
-  //     "An experimental real-time chat app exploring WebSocket concurrency and encryption.",
-  //   tags: ["Socket.io", "Redis", "Docker"],
-  //   linkText: "View source →",
-  // },
-  // {
-  //   title: "CMS Core",
-  //   desc:
-  //     "A headless CMS built from scratch with content modeling and GraphQL APIs.",
-  //   tags: ["Python", "Django", "GraphQL"],
-  //   linkText: "View project →",
-  // },
 ];
 
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative px-6 md:px-10 py-32 overflow-visible"
+      className="
+        relative
+        px-4 sm:px-6 md:px-10
+        py-28 md:py-32
+        overflow-visible
+      "
     >
-      {/* ambient background */}
+      {/* ambient background (UNCHANGED) */}
       <div className="absolute top-0 left-1/4 h-[500px] w-[500px] 
         rounded-full bg-[rgb(var(--primary))/15] blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-0 h-[420px] w-[420px] 
@@ -60,24 +44,37 @@ const Projects = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
           Projects
         </h2>
 
         {/* Cards */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          className="
+            mt-14 sm:mt-16 md:mt-20
+            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+            gap-6 md:gap-8
+          "
+        >
           {projects.map((project, index) => (
             <motion.article
               key={index}
               whileHover={{ y: -10 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="group relative rounded-[2rem] p-[1.5px]
-              bg-gradient-to-br from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]"
+              className="
+                group relative rounded-[2rem] p-[1.5px]
+                bg-gradient-to-br from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]
+              "
             >
               {/* inner card */}
-              <div className="relative h-full rounded-[2.3rem] 
-                bg-[#0b0f14] p-9 overflow-hidden">
-
+              <div
+                className="
+                  relative h-full rounded-[2.3rem]
+                  bg-[#0b0f14]
+                  p-6 sm:p-8 md:p-9
+                  overflow-hidden
+                "
+              >
                 {/* color wash */}
                 <div className="absolute inset-0 
                   bg-gradient-to-br from-[#ff7a18]/10 via-transparent to-[#ff2e88]/10 
@@ -91,24 +88,27 @@ const Projects = () => {
 
                 {/* content */}
                 <div className="relative z-10 flex flex-col h-full">
-                  <h3 className="text-xl font-bold text-white tracking-tight">
+                  <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
                     {project.title}
                   </h3>
 
-                  <p className="mt-4 text-smlate-400 text-smm leading-relaxed">
+                  <p className="mt-3 sm:mt-4 text-sm sm:text-smm text-smlate-400 leading-relaxed">
                     {project.desc}
                   </p>
 
                   {/* tags */}
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-5 sm:mt-6 flex flex-wrap gap-2">
                     {project.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="rounded-full px-4 py-2 text-smm 
-                        bg-white/5 border border-white/10 
-                        text-smlate-300
-                        group-hover:border-[#ff4d4d]/40
-                        transition-colors"
+                        className="
+                          rounded-full px-3 sm:px-4 py-1.5 sm:py-2
+                          text-xs sm:text-smm
+                          bg-white/5 border border-white/10
+                          text-smlate-300
+                          group-hover:border-[#ff4d4d]/40
+                          transition-colors
+                        "
                       >
                         {tag}
                       </span>
@@ -116,14 +116,16 @@ const Projects = () => {
                   </div>
 
                   {/* CTA */}
-                  <div className="mt-auto pt-10">
+                  <div className="mt-auto pt-8 sm:pt-10">
                     <a
                       href="#"
-                      className="inline-flex items-center gap-2 
-                      text-smm font-semibold
-                      bg-gradient-to-r from-[#ff7a18] to-[#ff2e88]
-                      bg-clip-text text-transparent
-                      opacity-80 group-hover:opacity-100 transition-opacity"
+                      className="
+                        inline-flex items-center gap-2
+                        text-xs sm:text-smm font-semibold
+                        bg-gradient-to-r from-[#ff7a18] to-[#ff2e88]
+                        bg-clip-text text-transparent
+                        opacity-80 group-hover:opacity-100 transition-opacity
+                      "
                     >
                       {project.linkText}
                       <FaExternalLinkAlt className="text-xs" />
@@ -136,16 +138,18 @@ const Projects = () => {
         </div>
 
         {/* GitHub CTA */}
-        <div className="mt-28 text-center">
+        <div className="mt-20 sm:mt-24 md:mt-28 text-center">
           <a
             href="https://github.com/vishsakshi"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 
-            rounded-full px-9 py-3
-            bg-gradient-to-r from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]
-            text-lg font-semibold text-white
-            hover:opacity-90 transition"
+            className="
+              inline-flex items-center gap-2
+              rounded-full px-7 sm:px-9 py-3
+              bg-gradient-to-r from-[#ff7a18] via-[#ff4d4d] to-[#ff2e88]
+              text-base sm:text-lg font-semibold text-white
+              hover:opacity-90 transition
+            "
           >
             View more on GitHub →
           </a>

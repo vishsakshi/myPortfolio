@@ -109,14 +109,8 @@ const About = () => {
 
           {/* SNAPSHOT ROW */}
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-smm text-smlate-400 max-w-3xl">
-            {/* <div className="border-l border-white/10 pl-4">
-              <p className="text-xs uppercase tracking-wide text-smlate-500">
-                Based in
-              </p>
-              <p className="mt-1 font-medium text-smlate-200">India</p>
-            </div> */}
 
-            <div className="sm:border-l border-white/10 sm:pl-4">
+            <div className="sm:border-l sm:border-white/10 sm:pl-4">
               <p className="text-xs uppercase tracking-wide text-smlate-500">
                 Focus
               </p>
@@ -125,7 +119,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="border-l border-white/10 pl-4">
+            <div className="sm:border-l sm:border-white/10 sm:pl-4">
               <p className="text-xs uppercase tracking-wide text-smlate-500">
                 Currently
               </p>
@@ -133,7 +127,9 @@ const About = () => {
                 Building projects & strengthening core concepts
               </p>
             </div>
+
           </div>
+
         </div>
 
         {/* RIGHT — PROFILE PHOTO */}

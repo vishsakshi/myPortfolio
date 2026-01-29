@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       // id="contact"
-      className="relative px-6 md:px-10 py-24 overflow-hidden"
+      className="relative px-5 sm:px-6 md:px-10 py-20 sm:py-24 overflow-hidden"
     >
       {/* Ambient background */}
       <div className="absolute top-20 left-1/4 h-[500px] w-[500px]
@@ -30,7 +30,7 @@ const Contact = () => {
             Open to work
           </span>
 
-            <h2 className="text-4xl md:text-4xl font-extrabold text-white">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
               Get in touch.
             </h2>
 
@@ -44,8 +44,7 @@ const Contact = () => {
           {/* EMAIL CARD */}
           <div className="mt-10">
             <div
-              className="rounded-3xl bg-white/5
-              border border-white/10 p-8"
+              className="rounded-3xl bg-white/5 border border-white/10 p-6 sm:p-8"
             >
               <div className="flex items-center gap-4 mb-6">
                 <FaEnvelope className="text-2xl text-[rgb(var(--primary))]" />

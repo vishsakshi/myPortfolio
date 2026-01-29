@@ -87,12 +87,13 @@ const cardHover = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="relative px-6 md:px-10 py-28">
+    <section id="skills" className="relative px-4 sm:px-6 md:px-10 py-20 sm:py-24 lg:py-28">
       {/* Background accents */}
       <div className="absolute top-0 left-0 h-[420px] w-[420px] rounded-full bg-[rgb(var(--primary))/10] blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 h-[360px] w-[360px] rounded-full bg-white/5 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 mx-auto
+    max-w-md sm:max-w-2xl lg:max-w-7xl">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -110,7 +111,7 @@ const Skills = () => {
         </motion.div>
 
         {/* Cards */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
           {/* CARD TEMPLATE */}
           {[
             {
@@ -148,7 +149,11 @@ const Skills = () => {
               initial="rest"
               whileHover="hover"
               animate="rest"
-              className="relative rounded-3xl bg-white/5 border border-white/10 p-9 backdrop-blur-md overflow-hidden group"
+              className="
+  relative rounded-3xl
+  bg-white/5 border border-white/10
+  p-6 sm:p-8 lg:p-9
+"
             >
               {/* gradient glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#ff7a18]/10 via-transparent to-[#ff2e88]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -161,17 +166,17 @@ const Skills = () => {
               </p>
 
               {/* title */}
-              <h3 className="text-xl font-bold text-white mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
                 {card.title}
               </h3>
 
               {/* desc */}
-              <p className="text-base text-smlate-400 mb-8 leading-relaxed">
+              <p className="text-sm sm:text-base text-smlate-400 mb-6 sm:mb-8 leading-relaxed">
                 {card.desc}
               </p>
 
               {/* chips */}
-              <div className="flex flex-wrap gap-3 group">
+              <div className="flex flex-wrap gap-2 sm:gap-3 group">
                 {card.skills.map((skill, i) => {
                   const Icon = skill.icon;
                   return (
